@@ -3,7 +3,7 @@
 ## Micro plugin to to create easy word-carousels
 
 Simple plugin to use on landingpages or startpages to make stuff look a bit more interesting. 
-Basically this lib is just for replace words in one element to create a simple *word-carousel*.
+Basically this lib is just for replace words in one element to create a simple **word-carousel**.
 
 ## Usage
 
@@ -19,7 +19,7 @@ Basically this lib is just for replace words in one element to create a simple *
 <span id="js_replace"></span>
 ```
 
-* 2. Initialize lib
+* 3. Initialize lib
 
 ```javascript
 <script type="text/javascript">
@@ -29,3 +29,5 @@ Basically this lib is just for replace words in one element to create a simple *
     });
 </script>
 ```
+
+* 4. Reload page and see how the words are chaning ;)
