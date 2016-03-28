@@ -3,7 +3,13 @@
 ## Micro plugin to to create easy word-carousels
 
 Simple plugin to use on landingpages or startpages to make stuff look a bit more interesting. 
-Basically this lib is just for replace words in one element to create a simple **word-carousel**.
+This lib is for replacing words in one element to create a simple **word-carousel**.
+
+## Advantages
+
+* < 1KB
+* without jQuery 
+* easy-to-use
 
 ## Usage
 
@@ -30,4 +36,4 @@ Basically this lib is just for replace words in one element to create a simple *
 </script>
 ```
 
-* 4. Reload page and see how the words are chaning ;)
+* 4. Reload page and see how the words are changing ;)
