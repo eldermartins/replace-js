@@ -2,7 +2,7 @@
 
 var ReplaceJs = function (config)
 {
-    this.duration = 5000;
+    this.duration = 2500;
     this.interval = 68;
     this.timeout = 1000;
 
@@ -51,6 +51,8 @@ ReplaceJs.prototype.init = function ()
         self.current = self.next;
 
     }, this.duration);  
+
+    return this;
 };
 
 ReplaceJs.prototype.replace = function ()
@@ -99,6 +101,7 @@ ReplaceJs.prototype.write = function ()
 
 !function ()
 {
+
     if (typeof exports !== 'undefined' && typeof module !== 'undefined' && typeof module.exports !== 'undefined')
     {
         module.exports = ReplaceJs;  
@@ -111,4 +114,5 @@ ReplaceJs.prototype.write = function ()
             return new ReplaceJs(config);
         };    
     }
-}
+
+}();

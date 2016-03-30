@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ReplaceJS Demo</title>
+        <script type="text/javascript" src="./dist/replace.min.js"></script>
+    </head>
+    <body>
+        <h1>ReplaceJS Demo</h1>
+
+        <p id="replace" class="cnt">cool</p>
+
+        <style type="text/css">
+        body {
+            font-family:'Helvetica', sans-serif;
+            background-color:#f9f9f9;
+            color:#333;
+            text-align:center;
+        }
+        .cnt {
+            display:inline-block;
+            font-size:4em;
+            line-height:1em;
+            padding:0.75em 0.5em;
+            margin:1em 0;
+            background-color:#444;
+            color:#f1f1f1;    
+            border-radius:3px;
+        }        
+        </style>
+
+        <script type="text/javascript">
+            replaceJs({
+                element: document.getElementById('replace'),
+                words: ['cool', 'nice', 'sweet', 'lovely']
+            });
+        </script>
+    </body>
+</html>

@@ -22,14 +22,14 @@ This lib is for replacing words in one element to create a simple **word-carouse
 2. Add element
 
 ```html
-<span id="js_replace"></span>
+<span id="replace">cool</span>
 ```
 
 3. Initialize lib
 
 ```javascript
 replaceJs({
-    element: document.getElementById('#js_replace'), // REQUIRED - the element from which the text value should change
+    element: document.getElementById('replace'), // REQUIRED - the element from which the text value should change
     words: ['cool', 'nice', 'sweet', 'lovely'] // REQUIRED - the words that should carousel through
 });
 ```
