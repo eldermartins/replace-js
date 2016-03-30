@@ -1,19 +1,24 @@
 {
   "name": "replacejs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A micro word replace plugin to make your landingpage more interesing.",
   "keywords": [
     "replace",
     "replacejs",
     "replace",
     "js",
-    "js",
-    "plugin"
+    "plugin",
+    "word",
+    "carousel"
   ],
   "author": "Willi Eßer <contact@troublete.com>",
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-minify": "0.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/troublete/replace-js.git"
   }
 }

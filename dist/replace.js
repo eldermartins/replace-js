@@ -1,18 +1,5 @@
-/**
- * replace.js - first iteration
- *
- * simple plugin to replace and refill words of an element.
- * 
- * @author Willi Eßer <contact@troublete.com> 
- */
-
 'use strict';
 
-/**
- * replace js class
- * 
- * @param {object} config the main config to set up
- */
 var ReplaceJs = function (config)
 {
     this.duration = 5000;
@@ -39,9 +26,6 @@ var ReplaceJs = function (config)
     this.init();
 };
 
-/**
- * function to initialize the element and the timing functions
- */
 ReplaceJs.prototype.init = function ()
 {
     var counter = 0;
@@ -69,9 +53,6 @@ ReplaceJs.prototype.init = function ()
     }, this.duration);  
 };
 
-/**
- * function to remove current word
- */
 ReplaceJs.prototype.replace = function ()
 {      
     if (typeof this.current === 'undefined' || typeof replacement !== 'undefined')
@@ -98,9 +79,6 @@ ReplaceJs.prototype.replace = function ()
     }, this.interval);
 };
 
-/**
- * function to write new word
- */
 ReplaceJs.prototype.write = function ()
 {
     var self = this;
@@ -119,13 +97,18 @@ ReplaceJs.prototype.write = function ()
     }, this.interval);
 };
 
-/**
- * bind function to window var for easy access
- * 
- * @param  {object} config the config
- * @return {function} the plugin
- */
-window.replaceJs = function (config)
+!function ()
 {
-    new ReplaceJs(config);
-};
+    if (typeof exports !== 'undefined' && typeof module !== 'undefined' && typeof module.exports !== 'undefined')
+    {
+        module.exports = ReplaceJs;  
+    }
+
+    if (typeof window !== 'undefined')
+    {
+        window.replaceJs = function (config)
+        {
+            return new ReplaceJs(config);
+        };    
+    }
+}
